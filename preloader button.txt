@@ -1,0 +1,32 @@
+<style>        button{
+            /* display: flex; */
+            text-align: center;
+            background-color: #41076d;
+            border:0px none #41076d;
+            font-weight: bold;
+            color: white;
+            height: 50px;
+            width: 100px;
+            cursor: pointer;
+            transition: 0.7s;
+            border-radius: 20px;
+        }
+        </style>
+        <center>
+         <div>
+            <button onclick="process()" id="processing">SUBMIT</button>
+        </div>
+        </center>
+        
+            <script>
+        function process(){
+            let element=document.getElementById("processing")
+            element.innerHTML="PROCESSING"
+            element.style.width="130px"
+            setTimeout(function(){
+        
+                window.location.href='https://tvactifastusa.com/support/'
+            },5000)
+
+        }
+    </script>

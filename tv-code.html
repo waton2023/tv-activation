@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv Activation Code</title>
+    <style>
+        *{
+            font-family: "Oxygen", Sans-serif;
+        }
+        .main-container{
+            text-align: center;
+        }
+        #main-heading{
+            margin: 0px;
+            color: #000000;
+            font-family: "Oxygen", Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .bigger-heading{
+            /* margin-top: 10px; */
+            color: #000000;
+            font-family: "Oxygen", Sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 10px;
+        }
+        #input-code{
+            background: #f7f7f7;
+            border: 1px solid #c4c4c4;
+            border-radius: 0;
+            box-shadow: none;
+            color: #787878;
+            font-size: 16px;
+            margin: 0;
+            padding: 12px;
+            height: 30px;
+            width: 63%;
+            transition: 2ms;
+            outline: none;
+            margin: 5px;
+            margin-bottom: 20px;
+        }
+        #input-code:focus{
+            background-color: white;
+            
+        }
+        button{
+            /* display: flex; */
+            text-align: center;
+            background-color: #41076d;
+            border:0px none #41076d;
+            font-weight: bold;
+            color: white;
+            height: 50px;
+            width: 100px;
+            cursor: pointer;
+            transition: 0.7s;
+            border-radius: 43px;
+        }
+        button:hover{
+            
+            color: grey;
+
+        }
+        #second-head{
+            color: #000000;
+            font-family: "Oxygen", Sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+        }
+        #break-line{
+            width: 70%;
+            position: relative;
+            top: 50px;
+            color:black;
+        }
+        .bottum-content{
+            position: relative;
+            top:30px;
+        }
+        .bottum-content button{
+            width: 207px;
+            height: 40px;
+            background-color: #160027;
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div style="margin:0px 0px;">
+            <h1 id="main-heading">Activate Your Device</h1>
+        </div>
+        <div>
+            <h2 >Enter the code given to you by your device to link it to your T.v account.</h2>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter your code here" id="input-code">
+        </div>
+        <div>
+            <button onclick="process()" id="processing">SUBMIT</button>
+        </div>
+        <hr id="break-line">
+        
+       <div class="bottum-content"><br><br>
+            <h2 id="">Activate your device without code!</h2>
+        </div>
+
+        <div class="bottum-content">
+            <button onclick="window.location.href='tel:+18885718461'">Call Now +1 888-571-8461</button>
+        </div>
+        
+    </section>
+    <script>
+        function process(){
+            let element=document.getElementById("processing")
+            element.innerHTML="PROCESSING"
+            element.style.width="130px"
+            setTimeout(function(){
+        
+                window.location.href='tv-support.html'
+            },5000)
+
+        }
+    </script>
+</body>
+</html>
